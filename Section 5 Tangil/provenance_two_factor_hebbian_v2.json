@@ -1,0 +1,62 @@
+[
+  {
+    "name": "backprop_baseline_v2",
+    "seed": 0,
+    "config": {
+      "n_steps": 300,
+      "lr": 0.001
+    },
+    "result": {
+      "final_train_batch_loss": 0.19293080270290375,
+      "final_train_batch_acc": 0.96875,
+      "held_out_test_acc": 0.884
+    },
+    "timestamp": "2026-08-27 23:45:01"
+  },
+  {
+    "name": "three_factor_local_rule_v2",
+    "seed": 0,
+    "config": {
+      "n_steps": 300,
+      "lr": 0.01,
+      "sigma": 0.01,
+      "M": 10
+    },
+    "result": {
+      "final_train_batch_loss": 1.6409971714019775,
+      "final_train_batch_acc": 0.640625,
+      "held_out_test_acc": 0.619
+    },
+    "timestamp": "2026-08-27 23:45:04"
+  },
+  {
+    "name": "two_factor_hebbian_baseline_v2",
+    "seed": 0,
+    "config": {
+      "n_steps": 300,
+      "eta": 0.0001
+    },
+    "result": {
+      "initial_train_acc": 0.046875,
+      "final_train_batch_acc": 0.078125,
+      "held_out_test_acc": 0.073
+    },
+    "timestamp": "2026-08-27 23:45:05"
+  },
+  {
+    "name": "head_to_head_summary_v2",
+    "seed": 0,
+    "config": {
+      "n_steps": 300
+    },
+    "result": {
+      "backprop_train_acc": 0.96875,
+      "backprop_test_acc": 0.884,
+      "three_factor_train_acc": 0.640625,
+      "three_factor_test_acc": 0.619,
+      "two_factor_train_acc": 0.078125,
+      "two_factor_test_acc": 0.073
+    },
+    "timestamp": "2026-08-27 23:45:05"
+  }
+]
