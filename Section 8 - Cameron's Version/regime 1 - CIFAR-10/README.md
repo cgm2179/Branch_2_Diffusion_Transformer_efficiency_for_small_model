@@ -1,0 +1,3 @@
+# §8 Attention — regime 1 · CIFAR-10 (from scratch, ViT classifier)
+
+From-scratch ViT (P≈1.02M, patch=4 -> 65 tokens) classifying CIFAR-10, matched on **equal wall-clock**. Backprop vs the forward-only antithetic three-factor rule; cos sweep v1/v2/v3 = cos 0.5/0.09/0.01. `07` adds a ~100M backprop ceiling. Checkpoints to Drive (`Section8_regime1_cifar10/`), live plot, `results/<method>.json`. Compare in `CIFAR-10 - 04_compare_results.ipynb`. NOTE: a 1M ViT on CIFAR from scratch (no augmentation) reaches only modest accuracy — the signal is method ordering + the cos sweep, not SOTA classification.
