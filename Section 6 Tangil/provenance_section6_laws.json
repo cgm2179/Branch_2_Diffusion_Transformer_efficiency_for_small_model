@@ -1,0 +1,227 @@
+[
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 1,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.012034633569601282,
+      "theoretical_cos2": 0.0196078431372549
+    },
+    "timestamp": "2026-08-27 23:47:56"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 2,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.022299408743856476,
+      "theoretical_cos2": 0.038461538461538464
+    },
+    "timestamp": "2026-08-27 23:47:56"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 5,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.08622827576473355,
+      "theoretical_cos2": 0.09090909090909091
+    },
+    "timestamp": "2026-08-27 23:47:56"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 10,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.19154944140464067,
+      "theoretical_cos2": 0.16666666666666666
+    },
+    "timestamp": "2026-08-27 23:47:56"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 20,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.317183993011713,
+      "theoretical_cos2": 0.2857142857142857
+    },
+    "timestamp": "2026-08-27 23:47:56"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 50,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.5371494755148888,
+      "theoretical_cos2": 0.5
+    },
+    "timestamp": "2026-08-27 23:47:57"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 100,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.6731445074081421,
+      "theoretical_cos2": 0.6666666666666666
+    },
+    "timestamp": "2026-08-27 23:47:59"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 200,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.8112358421087265,
+      "theoretical_cos2": 0.8
+    },
+    "timestamp": "2026-08-27 23:48:03"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 500,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.9122439861297608,
+      "theoretical_cos2": 0.9090909090909091
+    },
+    "timestamp": "2026-08-27 23:48:12"
+  },
+  {
+    "name": "law_pinning_M_sweep",
+    "seed": 0,
+    "config": {
+      "M": 1000,
+      "P": 49,
+      "n_trials": 20,
+      "sigma": 0.05
+    },
+    "result": {
+      "empirical_cos2": 0.9517861098051071,
+      "theoretical_cos2": 0.9523809523809523
+    },
+    "timestamp": "2026-08-27 23:48:31"
+  },
+  {
+    "name": "depth_dial",
+    "seed": 0,
+    "config": {
+      "depth": 1,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 10
+    },
+    "result": {
+      "coupling_density": 0.055413784459233284,
+      "alignment": 0.9445862155407667
+    },
+    "timestamp": "2026-08-27 23:48:32"
+  },
+  {
+    "name": "depth_dial",
+    "seed": 0,
+    "config": {
+      "depth": 2,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 10
+    },
+    "result": {
+      "coupling_density": 0.06987291648983955,
+      "alignment": 0.9301270835101605
+    },
+    "timestamp": "2026-08-27 23:48:32"
+  },
+  {
+    "name": "depth_dial",
+    "seed": 0,
+    "config": {
+      "depth": 4,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 10
+    },
+    "result": {
+      "coupling_density": 0.09015941545367241,
+      "alignment": 0.9098405845463275
+    },
+    "timestamp": "2026-08-27 23:48:32"
+  },
+  {
+    "name": "depth_dial",
+    "seed": 0,
+    "config": {
+      "depth": 8,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 10
+    },
+    "result": {
+      "coupling_density": 0.059992142394185065,
+      "alignment": 0.940007857605815
+    },
+    "timestamp": "2026-08-27 23:48:32"
+  },
+  {
+    "name": "depth_dial",
+    "seed": 0,
+    "config": {
+      "depth": 16,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 10
+    },
+    "result": {
+      "coupling_density": 0.06916960403323173,
+      "alignment": 0.9308303959667683
+    },
+    "timestamp": "2026-08-27 23:48:33"
+  }
+]
