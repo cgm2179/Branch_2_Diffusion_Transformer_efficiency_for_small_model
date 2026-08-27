@@ -1,0 +1,159 @@
+[
+  {
+    "name": "test1_backprop",
+    "seed": 0,
+    "config": {
+      "steps": 390,
+      "epochs": 5,
+      "batch_size": 128
+    },
+    "result": {
+      "test_accuracy": 0.928,
+      "wall_clock_s": 1.1040611267089844,
+      "forward_pass_equiv_budget": 780
+    },
+    "timestamp": "2026-08-27 23:53:20"
+  },
+  {
+    "name": "test1_three_factor",
+    "seed": 0,
+    "config": {
+      "steps": 19,
+      "M": 20,
+      "lr": 0.005,
+      "sigma": 0.01
+    },
+    "result": {
+      "test_accuracy": 0.0945,
+      "wall_clock_s": 0.5168485641479492,
+      "pass_bar_threshold": 0.8352,
+      "passes": false
+    },
+    "timestamp": "2026-08-27 23:53:21"
+  },
+  {
+    "name": "test1_memory",
+    "seed": 0,
+    "config": {
+      "batch_size": 128,
+      "M": 20
+    },
+    "result": {
+      "backprop_MB": 0.458984375,
+      "local_rule_MB": 1.26806640625
+    },
+    "timestamp": "2026-08-27 23:53:21"
+  },
+  {
+    "name": "test2_rank_sweep",
+    "seed": 0,
+    "config": {
+      "rank": 2,
+      "n_steps": 200
+    },
+    "result": {
+      "P_adapter": 148,
+      "backprop_acc": 0.443,
+      "three_factor_acc": 0.2025,
+      "two_factor_acc": 0.095,
+      "M_star_at_0.5": 49.666666666666664
+    },
+    "timestamp": "2026-08-27 23:53:23"
+  },
+  {
+    "name": "test2_rank_sweep",
+    "seed": 0,
+    "config": {
+      "rank": 4,
+      "n_steps": 200
+    },
+    "result": {
+      "P_adapter": 296,
+      "backprop_acc": 0.5905,
+      "three_factor_acc": 0.2435,
+      "two_factor_acc": 0.095,
+      "M_star_at_0.5": 99.0
+    },
+    "timestamp": "2026-08-27 23:53:25"
+  },
+  {
+    "name": "test2_rank_sweep",
+    "seed": 0,
+    "config": {
+      "rank": 8,
+      "n_steps": 200
+    },
+    "result": {
+      "P_adapter": 592,
+      "backprop_acc": 0.6465,
+      "three_factor_acc": 0.2635,
+      "two_factor_acc": 0.095,
+      "M_star_at_0.5": 197.66666666666666
+    },
+    "timestamp": "2026-08-27 23:53:27"
+  },
+  {
+    "name": "test2_rank_sweep",
+    "seed": 0,
+    "config": {
+      "rank": 16,
+      "n_steps": 200
+    },
+    "result": {
+      "P_adapter": 1184,
+      "backprop_acc": 0.6645,
+      "three_factor_acc": 0.2375,
+      "two_factor_acc": 0.095,
+      "M_star_at_0.5": 395.0
+    },
+    "timestamp": "2026-08-27 23:53:29"
+  },
+  {
+    "name": "test2_rank_sweep",
+    "seed": 0,
+    "config": {
+      "rank": 32,
+      "n_steps": 200
+    },
+    "result": {
+      "P_adapter": 2368,
+      "backprop_acc": 0.6645,
+      "three_factor_acc": 0.357,
+      "two_factor_acc": 0.095,
+      "M_star_at_0.5": 789.6666666666666
+    },
+    "timestamp": "2026-08-27 23:53:31"
+  },
+  {
+    "name": "test3_corruption_baseline",
+    "seed": 0,
+    "config": {
+      "n_instances": 100
+    },
+    "result": {
+      "base_acc": 0.91,
+      "corrupt_acc_no_adapt": 0.72,
+      "accuracy_lost": 0.19000000000000006
+    },
+    "timestamp": "2026-08-27 23:53:32"
+  },
+  {
+    "name": "test3_adaptation_results",
+    "seed": 0,
+    "config": {
+      "n_instances": 100,
+      "step_budget": 50,
+      "wall_clock_s": 60.29365873336792
+    },
+    "result": {
+      "acc_local_adapted": 1.0,
+      "acc_bp_adapted": 1.0,
+      "acc_heb_adapted": 0.73,
+      "recovery_local": 1.4736842105263155,
+      "recovery_bp": 1.4736842105263155,
+      "recovery_heb": 0.05263157894736845,
+      "passes_bar": true
+    },
+    "timestamp": "2026-08-27 23:54:32"
+  }
+]
