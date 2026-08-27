@@ -1,41 +1,43 @@
-# §7 — CNN Diffusion: a Native Fit · Dataset & Task
+# §7 — CNN: a Native Fit · Dataset & Task
 
-The **positive result**: diffusion on a convolutional denoiser hands the local rule exactly the
-separability the barrier law rewards. The training signal is a per-pixel, per-noise-level residual, and in
-the Parseval (spectral) basis the denoiser is **diagonal** — each mode is its own channel, so the coupling
-scope is **S = 1**. Diffusion also supplies a *second* feedback axis: the **timestep**.
+CNN on MNIST — the structured-but-local architecture. **regime 1 (built)** is image **reconstruction** of
+binarized MNIST (an Autoencoder and a Denoiser); the paper's full **DDPM diffusion** is deferred to a later
+regime. Built at **P≈1.01M** (same as §6/§8) so the three-factor **cos sweep** is comparable across
+architectures.
 
 ## Dataset
-**MNIST**, 28×28 grayscale (torchvision). Small enough to train a diffusion model from scratch in a
-notebook; the spectral structure is clean enough to expose the S=1 native fit.
+**MNIST**, binarized: `x = (pixel > 0.5)` ∈ {0,1}, 28×28 (torchvision). Pixel-accuracy therefore has an
+**all-background floor ≈ 0.87** (most pixels are 0) — methods must beat that.
 
-## Task
-**DDPM-style denoising diffusion** on a small **CNN denoiser**:
-- Forward noising schedule (β/ᾱ), denoising-score-matching (**DSM**) loss = predict the per-pixel,
-  per-noise-level residual.
-- Generation = reverse sampling from noise.
-- **Endpoints:** DSM loss, and sample quality (a generated-digit grid; optionally FID-lite / a proxy).
+## Task — recreate the image, score per-pixel accuracy
+A **CNN autoencoder** (conv encoder → dense latent bottleneck → Upsample+Conv decoder → 28×28 logits, ~1.01M)
+reconstructs the image. Loss = per-pixel **BCE-with-logits**; metric = **pixel-accuracy** = fraction of the
+784 pixels with `sigmoid(logit)>0.5 == target` (0–1). Two regime-1 variants:
+- **Autoencoder** (`CORRUPT_SIGMA=0`): input = clean binary image, target = same; the bottleneck makes it
+  non-trivial.
+- **Denoiser** (`CORRUPT_SIGMA=0.5`): input = image + Gaussian noise, target = clean image.
 
-**What we measure** — the same cos²/M\* machinery as §6, plus the diffusion-specific channels:
-- The per-mode Wiener-gain optimum is closed-form (quadratic objective) → the local rule converges linearly.
-- **Timestep bins** as independent feedback channels: binning timesteps yields per-bin adapters that
-  multiply feedback bandwidth K and, by the barrier law, cut the budget.
+## Regimes
+| regime | what | status |
+|---|---|---|
+| 1 — Autoencoder | reconstruct binarized MNIST | **built** — `regime 1 - Autoencoder/` |
+| 1 — Denoiser | recover clean image from noisy input | **built** — `regime 1 - Denoiser/` |
+| 2 | fine-tune (LoRA rank sweep M\* vs P) | planned |
+| 3 | inference-time (per-instance repair) | planned — feeds §10.1 |
+| 4 | **DDPM diffusion** + temporal-bin sweep (M\*∝1/B) | planned — the paper's "native fit" §7 |
 
-## Regimes (Tests 1–4)
-| regime | Test | what it does | notes |
-|---|---|---|---|
-| 1 | from-scratch | MNIST diffusion, backprop vs local head-to-head | **biggest new build** — a fresh small CNN DDPM (the earlier WDSGB diffusion notebooks were scratched) |
-| 2 | fine-tune | LoRA-subspace post-training; rank sweep M\* vs P vs backprop-LoRA | |
-| 3 | inference-time | per-instance repair (single subject/style) | feeds §10.1 test-time personalization |
-| 4 | temporal sweep | M\* vs number of timestep bins B | expect **M\* ∝ 1/B** until it plateaus; plateau height measures the off-Gaussian coupling gap Δ(t) |
+Each built regime runs **5 methods on the same ~1.01M CNN, equal wall-clock**: `01_backprop` (Adam+BCE),
+`02_two_factor_hebbian` (target-blind Hebbian on the dense layers; conv kernels left at init → ≈ background),
+`03/04/05_three_factor_{clean,normal,noisy}` (cos≈0.5/0.09/0.01), `06_compare_results` (BCE + pixel-acc
+curves, cost/memory, cos-sweep head-to-head, a **sample-reconstruction grid** input·target·reconstruction).
 
-Notebooks per regime mirror §8 (`01_backprop / 02_two_factor_hebbian / 03_three_factor / 04_compare_results`)
-on the equal-wall-clock harness — swapping the loss (DSM instead of CE) and the model (CNN denoiser).
-
-## Reuse
-§8 harness (equal wall-clock, Drive checkpoint, live plot, results JSON, antithetic estimator). The MNIST
-`.jpg` data already in `archive/` is available offline; torchvision MNIST is the default.
+## Reuse & harness
+Same equal-wall-clock harness as §6/§8 (Drive checkpoint/auto-resume, hourly live plot, per-minute heartbeat,
+`results/*.json`, the vmap antithetic estimator — with BCE in place of cross-entropy/MSE). Decoder uses
+**Upsample+Conv (not ConvTranspose)** for vmap compatibility; no BatchNorm (vmap-clean). CNN forward
+(~10M FLOPs/img) sits between the §6 MLP and §8 ViT, so the clean-budget three-factor gets a moderate number
+of steps.
 
 ## Pre-registered bars
-*TODO before running:* from-scratch — local reaches a target DSM loss / recognizable samples within budget;
-temporal sweep — M\* falls at least ~1/B over B∈{1,2,4,8} before plateauing.
+*TODO before the real run:* backprop pixel-acc ≥ (target) above the 0.87 background floor; three-factor
+clean reaches a recognizable reconstruction; the cos-sweep ordering vs §6/§8.
