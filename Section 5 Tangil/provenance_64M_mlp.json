@@ -1,0 +1,104 @@
+[
+  {
+    "name": "model_build",
+    "seed": 0,
+    "config": {
+      "width": 4488,
+      "depth": 4
+    },
+    "result": {
+      "param_count": 64007866
+    },
+    "timestamp": "2026-08-27 23:37:01"
+  },
+  {
+    "name": "memory_at_64M_scale",
+    "seed": 0,
+    "config": {
+      "params": 64007866,
+      "batch_size": 64
+    },
+    "result": {
+      "backprop_MB": 263.16845703125,
+      "local_rule_MB": 2.32958984375
+    },
+    "timestamp": "2026-08-27 23:37:03"
+  },
+  {
+    "name": "backprop_training_64M",
+    "seed": 0,
+    "config": {
+      "n_batches": 200,
+      "batch_size": 256
+    },
+    "result": {
+      "final_loss": 0.10546834021806717,
+      "running_acc": 0.90974609375
+    },
+    "timestamp": "2026-08-27 23:37:33"
+  },
+  {
+    "name": "mstar_scaling_point",
+    "seed": 0,
+    "config": {
+      "width": 4,
+      "P": 149,
+      "M": 200
+    },
+    "result": {
+      "cosine": 0.746782660484314
+    },
+    "timestamp": "2026-08-27 23:37:36"
+  },
+  {
+    "name": "mstar_scaling_point",
+    "seed": 0,
+    "config": {
+      "width": 8,
+      "P": 393,
+      "M": 200
+    },
+    "result": {
+      "cosine": 0.6069027781486511
+    },
+    "timestamp": "2026-08-27 23:37:36"
+  },
+  {
+    "name": "mstar_scaling_point",
+    "seed": 0,
+    "config": {
+      "width": 16,
+      "P": 1169,
+      "M": 200
+    },
+    "result": {
+      "cosine": 0.38709884881973267
+    },
+    "timestamp": "2026-08-27 23:37:37"
+  },
+  {
+    "name": "mstar_scaling_point",
+    "seed": 0,
+    "config": {
+      "width": 32,
+      "P": 3873,
+      "M": 200
+    },
+    "result": {
+      "cosine": 0.23037976026535034
+    },
+    "timestamp": "2026-08-27 23:37:37"
+  },
+  {
+    "name": "adapter_scoping",
+    "seed": 0,
+    "config": {
+      "rank": 8,
+      "adapter_params": 35984
+    },
+    "result": {
+      "M_star_at_0.9": 153409.7368421053
+    },
+    "timestamp": "2026-08-27 23:37:41"
+  }
+]
