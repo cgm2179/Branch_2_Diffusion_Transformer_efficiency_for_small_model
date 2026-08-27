@@ -1,0 +1,3 @@
+# §7 CNN — regime 1 · CIFAR-10 Denoiser (from scratch)
+
+Five rules train the same ~1.01M CNN autoencoder to denoise CIFAR-10 (input = clean + N(0,0.1^2) noise), matched on equal wall-clock; loss = MSE, metrics = PSNR (dB) + SSIM. Three-factor cos sweep clean/normal/noisy = cos 0.5/0.09/0.01. Checkpoints to Drive (`Section7_r1_cifar10_denoiser/`), live plot, `results/<method>.json`. `07` adds a 100M backprop ceiling; `08` is a VQ-VAE denoiser through the non-differentiable codebook (no DDPM). Compare in `CIFAR-10 Denoiser - 06_compare_results.ipynb`. NOTE: a 1M ConvAE on CIFAR is blurry — the point is method ordering + the cos sweep, not SOTA quality.
