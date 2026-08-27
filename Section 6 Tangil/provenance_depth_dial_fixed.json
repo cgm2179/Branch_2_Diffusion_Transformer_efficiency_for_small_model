@@ -1,0 +1,616 @@
+[
+  {
+    "name": "depth_dial_fixed",
+    "seed": 0,
+    "config": {
+      "depth": 1,
+      "seed": 0,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.05215068303048611,
+      "alignment": 0.9478493169695139
+    },
+    "timestamp": "2026-08-27 23:50:29"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 1,
+    "config": {
+      "depth": 1,
+      "seed": 1,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.02730404118075967,
+      "alignment": 0.9726959588192403
+    },
+    "timestamp": "2026-08-27 23:50:29"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 2,
+    "config": {
+      "depth": 1,
+      "seed": 2,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.04922073908150196,
+      "alignment": 0.9507792609184981
+    },
+    "timestamp": "2026-08-27 23:50:29"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 3,
+    "config": {
+      "depth": 1,
+      "seed": 3,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.032073933370411395,
+      "alignment": 0.9679260666295886
+    },
+    "timestamp": "2026-08-27 23:50:29"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 4,
+    "config": {
+      "depth": 1,
+      "seed": 4,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.035524689815938475,
+      "alignment": 0.9644753101840615
+    },
+    "timestamp": "2026-08-27 23:50:29"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 0,
+    "config": {
+      "depth": 2,
+      "seed": 0,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.0671239821612835,
+      "alignment": 0.9328760178387165
+    },
+    "timestamp": "2026-08-27 23:50:30"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 1,
+    "config": {
+      "depth": 2,
+      "seed": 1,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.06641877770423889,
+      "alignment": 0.9335812222957611
+    },
+    "timestamp": "2026-08-27 23:50:30"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 2,
+    "config": {
+      "depth": 2,
+      "seed": 2,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.1428688494861126,
+      "alignment": 0.8571311505138874
+    },
+    "timestamp": "2026-08-27 23:50:30"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 3,
+    "config": {
+      "depth": 2,
+      "seed": 3,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.08738801434636116,
+      "alignment": 0.9126119856536389
+    },
+    "timestamp": "2026-08-27 23:50:30"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 4,
+    "config": {
+      "depth": 2,
+      "seed": 4,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.08020909592509269,
+      "alignment": 0.9197909040749073
+    },
+    "timestamp": "2026-08-27 23:50:31"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 0,
+    "config": {
+      "depth": 4,
+      "seed": 0,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.08998498678207398,
+      "alignment": 0.910015013217926
+    },
+    "timestamp": "2026-08-27 23:50:31"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 1,
+    "config": {
+      "depth": 4,
+      "seed": 1,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.0892690023779869,
+      "alignment": 0.910730997622013
+    },
+    "timestamp": "2026-08-27 23:50:31"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 2,
+    "config": {
+      "depth": 4,
+      "seed": 2,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.02435133095830679,
+      "alignment": 0.9756486690416932
+    },
+    "timestamp": "2026-08-27 23:50:32"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 3,
+    "config": {
+      "depth": 4,
+      "seed": 3,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.0678916760534048,
+      "alignment": 0.9321083239465952
+    },
+    "timestamp": "2026-08-27 23:50:32"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 4,
+    "config": {
+      "depth": 4,
+      "seed": 4,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.053442321941256525,
+      "alignment": 0.9465576780587435
+    },
+    "timestamp": "2026-08-27 23:50:32"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 0,
+    "config": {
+      "depth": 8,
+      "seed": 0,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.05997907139360905,
+      "alignment": 0.940020928606391
+    },
+    "timestamp": "2026-08-27 23:50:33"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 1,
+    "config": {
+      "depth": 8,
+      "seed": 1,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.10256331503391265,
+      "alignment": 0.8974366849660873
+    },
+    "timestamp": "2026-08-27 23:50:33"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 2,
+    "config": {
+      "depth": 8,
+      "seed": 2,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.05580439165234566,
+      "alignment": 0.9441956083476544
+    },
+    "timestamp": "2026-08-27 23:50:34"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 3,
+    "config": {
+      "depth": 8,
+      "seed": 3,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.04617277525365353,
+      "alignment": 0.9538272247463465
+    },
+    "timestamp": "2026-08-27 23:50:34"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 4,
+    "config": {
+      "depth": 8,
+      "seed": 4,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.055948548913002015,
+      "alignment": 0.944051451086998
+    },
+    "timestamp": "2026-08-27 23:50:35"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 0,
+    "config": {
+      "depth": 16,
+      "seed": 0,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.06916861101984978,
+      "alignment": 0.9308313889801503
+    },
+    "timestamp": "2026-08-27 23:50:35"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 1,
+    "config": {
+      "depth": 16,
+      "seed": 1,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.09080469593405724,
+      "alignment": 0.9091953040659427
+    },
+    "timestamp": "2026-08-27 23:50:36"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 2,
+    "config": {
+      "depth": 16,
+      "seed": 2,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.04170629300177097,
+      "alignment": 0.958293706998229
+    },
+    "timestamp": "2026-08-27 23:50:37"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 3,
+    "config": {
+      "depth": 16,
+      "seed": 3,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.028604565598070623,
+      "alignment": 0.9713954344019293
+    },
+    "timestamp": "2026-08-27 23:50:38"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 4,
+    "config": {
+      "depth": 16,
+      "seed": 4,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.04384274460375309,
+      "alignment": 0.956157255396247
+    },
+    "timestamp": "2026-08-27 23:50:38"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 0,
+    "config": {
+      "depth": 32,
+      "seed": 0,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.04321582145988941,
+      "alignment": 0.9567841785401106
+    },
+    "timestamp": "2026-08-27 23:50:40"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 1,
+    "config": {
+      "depth": 32,
+      "seed": 1,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.04900118358433247,
+      "alignment": 0.9509988164156675
+    },
+    "timestamp": "2026-08-27 23:50:42"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 2,
+    "config": {
+      "depth": 32,
+      "seed": 2,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.05039397567510605,
+      "alignment": 0.9496060243248939
+    },
+    "timestamp": "2026-08-27 23:50:43"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 3,
+    "config": {
+      "depth": 32,
+      "seed": 3,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.054669748544692996,
+      "alignment": 0.945330251455307
+    },
+    "timestamp": "2026-08-27 23:50:45"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 4,
+    "config": {
+      "depth": 32,
+      "seed": 4,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.09642515793442726,
+      "alignment": 0.9035748420655727
+    },
+    "timestamp": "2026-08-27 23:50:46"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 0,
+    "config": {
+      "depth": 64,
+      "seed": 0,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.038108764588832854,
+      "alignment": 0.9618912354111672
+    },
+    "timestamp": "2026-08-27 23:50:49"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 1,
+    "config": {
+      "depth": 64,
+      "seed": 1,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.07941403344273568,
+      "alignment": 0.9205859665572643
+    },
+    "timestamp": "2026-08-27 23:50:51"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 2,
+    "config": {
+      "depth": 64,
+      "seed": 2,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.052091848105192184,
+      "alignment": 0.9479081518948078
+    },
+    "timestamp": "2026-08-27 23:50:55"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 3,
+    "config": {
+      "depth": 64,
+      "seed": 3,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.1071925014257431,
+      "alignment": 0.8928074985742569
+    },
+    "timestamp": "2026-08-27 23:50:58"
+  },
+  {
+    "name": "depth_dial_fixed",
+    "seed": 4,
+    "config": {
+      "depth": 64,
+      "seed": 4,
+      "width": 16,
+      "output_dim": 4,
+      "n_probes": 50
+    },
+    "result": {
+      "coupling_density": 0.07918399304151535,
+      "alignment": 0.9208160069584846
+    },
+    "timestamp": "2026-08-27 23:51:00"
+  },
+  {
+    "name": "depth_dial_fixed_summary",
+    "seed": "all",
+    "config": {
+      "depths": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "n_seeds": 5,
+      "n_probes": 50
+    },
+    "result": {
+      "means": [
+        0.9607451827041805,
+        0.9111982560753823,
+        0.9350121363773942,
+        0.9359063795506953,
+        0.9451746179684996,
+        0.9412588225603103,
+        0.9288017718791961
+      ],
+      "stds": [
+        0.00973573772041461,
+        0.02817802926626524,
+        0.024525453357005955,
+        0.019763891885309748,
+        0.022273299185284107,
+        0.019194993384085143,
+        0.024028424681372756
+      ]
+    },
+    "timestamp": "2026-08-27 23:51:01"
+  },
+  {
+    "name": "depth_dial_fixed_verdict",
+    "seed": "all",
+    "config": {
+      "shallow_depth": 1,
+      "deep_depth": 64
+    },
+    "result": {
+      "shallow_mean": 0.9607451827041805,
+      "deep_mean": 0.9288017718791961,
+      "gap": 0.03194341082498442,
+      "combined_std": 0.02592585160856066,
+      "exceeds_noise": true
+    },
+    "timestamp": "2026-08-27 23:51:01"
+  }
+]
