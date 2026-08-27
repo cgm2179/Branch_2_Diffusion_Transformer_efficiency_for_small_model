@@ -1,0 +1,185 @@
+[
+  {
+    "name": "test3_backbone_pretrain",
+    "seed": 0,
+    "config": {
+      "epochs": 5,
+      "n_train": 10000
+    },
+    "result": {
+      "clean_test_acc": 0.9265
+    },
+    "timestamp": "2026-08-27 23:56:54"
+  },
+  {
+    "name": "test3_corruption_baseline_v2",
+    "seed": 0,
+    "config": {
+      "n_instances": 150
+    },
+    "result": {
+      "base_acc": 0.9,
+      "corrupt_acc_no_adapt": 0.6666666666666666,
+      "accuracy_lost": 0.2333333333333334
+    },
+    "timestamp": "2026-08-27 23:56:55"
+  },
+  {
+    "name": "test3_entropy_adaptation_results",
+    "seed": 0,
+    "config": {
+      "n_instances": 150,
+      "checkpoint_steps": [
+        0,
+        1,
+        5,
+        10,
+        20,
+        50
+      ],
+      "M": 10,
+      "wall_clock_s": 106.50049829483032
+    },
+    "result": {
+      "rows": [
+        {
+          "step": 0,
+          "method": "three_factor",
+          "accuracy": 0.6666666666666666,
+          "mean_entropy": 0.7283704316864411
+        },
+        {
+          "step": 0,
+          "method": "backprop",
+          "accuracy": 0.6666666666666666,
+          "mean_entropy": 0.7283704316864411
+        },
+        {
+          "step": 0,
+          "method": "hebbian",
+          "accuracy": 0.6666666666666666,
+          "mean_entropy": 0.7283704316864411
+        },
+        {
+          "step": 1,
+          "method": "three_factor",
+          "accuracy": 0.6666666666666666,
+          "mean_entropy": 0.5949888501067956
+        },
+        {
+          "step": 1,
+          "method": "backprop",
+          "accuracy": 0.66,
+          "mean_entropy": 0.04469034432278325
+        },
+        {
+          "step": 1,
+          "method": "hebbian",
+          "accuracy": 0.6666666666666666,
+          "mean_entropy": 0.722564764097333
+        },
+        {
+          "step": 5,
+          "method": "three_factor",
+          "accuracy": 0.6533333333333333,
+          "mean_entropy": 0.282934949050347
+        },
+        {
+          "step": 5,
+          "method": "backprop",
+          "accuracy": 0.66,
+          "mean_entropy": 0.0025573151058051733
+        },
+        {
+          "step": 5,
+          "method": "hebbian",
+          "accuracy": 0.6666666666666666,
+          "mean_entropy": 0.6998032135888934
+        },
+        {
+          "step": 10,
+          "method": "three_factor",
+          "accuracy": 0.6533333333333333,
+          "mean_entropy": 0.14232086600114902
+        },
+        {
+          "step": 10,
+          "method": "backprop",
+          "accuracy": 0.66,
+          "mean_entropy": 0.0008995498601386013
+        },
+        {
+          "step": 10,
+          "method": "hebbian",
+          "accuracy": 0.6666666666666666,
+          "mean_entropy": 0.6723851445689797
+        },
+        {
+          "step": 20,
+          "method": "three_factor",
+          "accuracy": 0.6533333333333333,
+          "mean_entropy": 0.06884943323830764
+        },
+        {
+          "step": 20,
+          "method": "backprop",
+          "accuracy": 0.66,
+          "mean_entropy": 0.00031302365629623334
+        },
+        {
+          "step": 20,
+          "method": "hebbian",
+          "accuracy": 0.6666666666666666,
+          "mean_entropy": 0.620940369895349
+        },
+        {
+          "step": 50,
+          "method": "three_factor",
+          "accuracy": 0.6533333333333333,
+          "mean_entropy": 0.03234662316739559
+        },
+        {
+          "step": 50,
+          "method": "backprop",
+          "accuracy": 0.66,
+          "mean_entropy": 0.00013835473114644022
+        },
+        {
+          "step": 50,
+          "method": "hebbian",
+          "accuracy": 0.7,
+          "mean_entropy": 0.49170926607058696
+        }
+      ]
+    },
+    "timestamp": "2026-08-27 23:58:41"
+  },
+  {
+    "name": "test3_pass_bar_verdict",
+    "seed": 0,
+    "config": {
+      "n_instances": 150
+    },
+    "result": {
+      "three_factor": {
+        "best_step": 0,
+        "best_acc": 0.6666666666666666,
+        "recovery_pct": 0.0,
+        "passes": false
+      },
+      "backprop": {
+        "best_step": 0,
+        "best_acc": 0.6666666666666666,
+        "recovery_pct": 0.0,
+        "passes": false
+      },
+      "hebbian": {
+        "best_step": 50,
+        "best_acc": 0.7,
+        "recovery_pct": 14.28571428571428,
+        "passes": false
+      }
+    },
+    "timestamp": "2026-08-27 23:58:42"
+  }
+]
