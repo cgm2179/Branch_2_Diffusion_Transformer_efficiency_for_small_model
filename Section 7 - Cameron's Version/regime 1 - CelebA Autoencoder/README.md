@@ -1,0 +1,3 @@
+# §7 CNN — regime 1 · CelebA Autoencoder (64px) (from scratch)
+
+Five rules train the same ~1.01M CNN autoencoder to reconstruct 64x64 CelebA faces (center-crop -> resize), matched on equal wall-clock; loss = MSE, metrics = PSNR (dB) + SSIM. Three-factor cos sweep clean/normal/noisy = cos 0.5/0.09/0.01. Checkpoints to Drive (`Section7_r1_celeba/`), live plot, `results/<method>.json`. `07` adds a 100M backprop ceiling. Compare in `CelebA Autoencoder - 06_compare_results.ipynb`. Data: set `CELEBA_ROOT` to the aligned-JPG folder (first run decodes a subset + caches a .pt; on Colab unzip to a local path, not Drive). NOTE: a 1M ConvAE on faces is blurry — the point is method ordering + the cos sweep, not SOTA quality.
