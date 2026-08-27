@@ -1,0 +1,3 @@
+# §7 CNN — regime 1 · CIFAR-10 (Autoencoder, from scratch)
+
+Five rules train the same ~1.01M CNN autoencoder to reconstruct CIFAR-10, matched on equal wall-clock; loss = MSE, metrics = PSNR (dB) + SSIM. Three-factor cos sweep clean/normal/noisy = cos 0.5/0.09/0.01. Checkpoints to Drive (`Section7_r1_cifar10/`), live plot, `results/<method>.json`. `07` adds a 100M backprop ceiling; `08` is VQ-latent diffusion through the non-differentiable codebook. Compare in `CIFAR-10 - 06_compare_results.ipynb`. NOTE: a 1M autoencoder on CIFAR reconstructs blurrily — the point is method ordering + the cos sweep, not SOTA reconstruction.
