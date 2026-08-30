@@ -1,0 +1,124 @@
+[
+  {
+    "name": "denoiser_build_final",
+    "seed": 0,
+    "config": {
+      "base_ch": 32,
+      "time_dim": 32
+    },
+    "result": {
+      "param_count": 351585
+    },
+    "timestamp": "2026-08-30 21:20:36"
+  },
+  {
+    "name": "denoiser_final_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 3000
+    },
+    "result": {
+      "loss_last_500": 0.031880482479929924,
+      "checkpoint_path": "denoiser_final_checkpoint_step3000.pt"
+    },
+    "timestamp": "2026-08-30 21:22:29"
+  },
+  {
+    "name": "denoiser_final_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 6000
+    },
+    "result": {
+      "loss_last_500": 0.027395080465823413,
+      "checkpoint_path": "denoiser_final_checkpoint_step6000.pt"
+    },
+    "timestamp": "2026-08-30 21:24:03"
+  },
+  {
+    "name": "denoiser_final_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 9000
+    },
+    "result": {
+      "loss_last_500": 0.02587200900539756,
+      "checkpoint_path": "denoiser_final_checkpoint_step9000.pt"
+    },
+    "timestamp": "2026-08-30 21:25:37"
+  },
+  {
+    "name": "denoiser_final_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 12000
+    },
+    "result": {
+      "loss_last_500": 0.02481500269472599,
+      "checkpoint_path": "denoiser_final_checkpoint_step12000.pt"
+    },
+    "timestamp": "2026-08-30 21:27:11"
+  },
+  {
+    "name": "denoiser_final_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 15000
+    },
+    "result": {
+      "loss_last_500": 0.024265662655234336,
+      "checkpoint_path": "denoiser_final_checkpoint_step15000.pt"
+    },
+    "timestamp": "2026-08-30 21:28:45"
+  },
+  {
+    "name": "denoiser_final_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 18000
+    },
+    "result": {
+      "loss_last_500": 0.024147843565791846,
+      "checkpoint_path": "denoiser_final_checkpoint_step18000.pt"
+    },
+    "timestamp": "2026-08-30 21:30:19"
+  },
+  {
+    "name": "denoiser_final_training",
+    "seed": 0,
+    "config": {
+      "n_steps": 18000,
+      "peak_lr": 0.0002,
+      "batch_size": 128,
+      "base_ch": 32,
+      "param_count": 351585
+    },
+    "result": {
+      "final_loss": 0.024021392539143562,
+      "wall_clock_s": 563.5945155620575
+    },
+    "timestamp": "2026-08-30 21:30:19"
+  },
+  {
+    "name": "denoiser_final_best_checkpoint",
+    "seed": 0,
+    "config": {
+      "best_step": 18000
+    },
+    "result": {
+      "reloaded": true
+    },
+    "timestamp": "2026-08-30 21:31:51"
+  },
+  {
+    "name": "denoiser_final_samples",
+    "seed": 0,
+    "config": {
+      "best_step": 18000
+    },
+    "result": {
+      "generated": true
+    },
+    "timestamp": "2026-08-30 21:32:00"
+  }
+]
