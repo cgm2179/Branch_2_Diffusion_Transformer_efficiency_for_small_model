@@ -1,0 +1,262 @@
+[
+  {
+    "name": "denoiser_1M_build",
+    "seed": 0,
+    "config": {
+      "base_ch": 56,
+      "time_dim": 32
+    },
+    "result": {
+      "param_count": 1059897
+    },
+    "timestamp": "2026-08-31 01:25:18"
+  },
+  {
+    "name": "denoiser_1M_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 3000
+    },
+    "result": {
+      "loss_last_500": 0.028661600299179555,
+      "checkpoint_path": "denoiser_1M_checkpoint_step3000.pt"
+    },
+    "timestamp": "2026-08-31 01:28:49"
+  },
+  {
+    "name": "denoiser_1M_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 6000
+    },
+    "result": {
+      "loss_last_500": 0.02494848696887493,
+      "checkpoint_path": "denoiser_1M_checkpoint_step6000.pt"
+    },
+    "timestamp": "2026-08-31 01:32:10"
+  },
+  {
+    "name": "denoiser_1M_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 9000
+    },
+    "result": {
+      "loss_last_500": 0.023927126672118902,
+      "checkpoint_path": "denoiser_1M_checkpoint_step9000.pt"
+    },
+    "timestamp": "2026-08-31 01:35:30"
+  },
+  {
+    "name": "denoiser_1M_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 12000
+    },
+    "result": {
+      "loss_last_500": 0.02298922314681113,
+      "checkpoint_path": "denoiser_1M_checkpoint_step12000.pt"
+    },
+    "timestamp": "2026-08-31 01:38:50"
+  },
+  {
+    "name": "denoiser_1M_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 15000
+    },
+    "result": {
+      "loss_last_500": 0.022408047866076232,
+      "checkpoint_path": "denoiser_1M_checkpoint_step15000.pt"
+    },
+    "timestamp": "2026-08-31 01:42:11"
+  },
+  {
+    "name": "denoiser_1M_checkpoint",
+    "seed": 0,
+    "config": {
+      "step": 18000
+    },
+    "result": {
+      "loss_last_500": 0.02226429800875485,
+      "checkpoint_path": "denoiser_1M_checkpoint_step18000.pt"
+    },
+    "timestamp": "2026-08-31 01:45:32"
+  },
+  {
+    "name": "denoiser_1M_training",
+    "seed": 0,
+    "config": {
+      "n_steps": 18000,
+      "peak_lr": 0.0002,
+      "base_ch": 56,
+      "param_count": 1059897
+    },
+    "result": {
+      "final_loss": 0.022135722758248447,
+      "wall_clock_s": 1194.167260169983
+    },
+    "timestamp": "2026-08-31 01:45:32"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 100,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.0017395027680322528,
+      "psnr_db": 27.59574875832646,
+      "pixel_accuracy": 0.9888137578964233,
+      "ssim": 0.991108775138855
+    },
+    "timestamp": "2026-08-31 01:45:32"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 300,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.010341940447688103,
+      "psnr_db": 19.853979673679433,
+      "pixel_accuracy": 0.9699490070343018,
+      "ssim": 0.9447444677352905
+    },
+    "timestamp": "2026-08-31 01:45:32"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 500,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.03930668905377388,
+      "psnr_db": 14.055335368523874,
+      "pixel_accuracy": 0.9205102324485779,
+      "ssim": 0.7499461770057678
+    },
+    "timestamp": "2026-08-31 01:45:32"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 700,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.06996990740299225,
+      "psnr_db": 11.550887008255486,
+      "pixel_accuracy": 0.8706760406494141,
+      "ssim": 0.4566352963447571
+    },
+    "timestamp": "2026-08-31 01:45:32"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 900,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.13232646882534027,
+      "psnr_db": 8.783532766361482,
+      "pixel_accuracy": 0.7975510358810425,
+      "ssim": 0.21681594848632812
+    },
+    "timestamp": "2026-08-31 01:45:32"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 100,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.0017683850601315498,
+      "psnr_db": 27.524231628058807,
+      "pixel_accuracy": 0.989081621170044,
+      "ssim": 0.9909610748291016
+    },
+    "timestamp": "2026-08-31 01:45:53"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 300,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.010252643376588821,
+      "psnr_db": 19.89164148670473,
+      "pixel_accuracy": 0.9699872732162476,
+      "ssim": 0.9452136754989624
+    },
+    "timestamp": "2026-08-31 01:45:53"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 500,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.041057925671339035,
+      "psnr_db": 13.866029958384809,
+      "pixel_accuracy": 0.9179081916809082,
+      "ssim": 0.7391247749328613
+    },
+    "timestamp": "2026-08-31 01:45:53"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 700,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.07062005251646042,
+      "psnr_db": 11.510719638105812,
+      "pixel_accuracy": 0.8680229783058167,
+      "ssim": 0.4444885849952698
+    },
+    "timestamp": "2026-08-31 01:45:53"
+  },
+  {
+    "name": "denoiser_1M_reconstruction_metrics",
+    "seed": 0,
+    "config": {
+      "t": 900,
+      "best_step": 18000
+    },
+    "result": {
+      "mse": 0.1362544149160385,
+      "psnr_db": 8.656494168119814,
+      "pixel_accuracy": 0.7909566164016724,
+      "ssim": 0.22153030335903168
+    },
+    "timestamp": "2026-08-31 01:45:53"
+  },
+  {
+    "name": "denoiser_1M_final_samples",
+    "seed": 0,
+    "config": {
+      "best_step": 18000
+    },
+    "result": {
+      "generated": true
+    },
+    "timestamp": "2026-08-31 01:46:01"
+  }
+]
