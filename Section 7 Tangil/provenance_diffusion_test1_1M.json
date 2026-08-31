@@ -1,0 +1,107 @@
+[
+  {
+    "name": "test1_1M_backprop",
+    "seed": 0,
+    "config": {
+      "steps": 500,
+      "lr": 0.0002
+    },
+    "result": {
+      "final_loss": 0.03906019750982523,
+      "wall_clock_s": 14.991189241409302,
+      "forward_pass_equiv_budget": 1000,
+      "mse": 0.057469334453344345,
+      "psnr_db": 12.405638323584494,
+      "pixel_accuracy": 0.8969770669937134,
+      "ssim": 0.5771811604499817
+    },
+    "timestamp": "2026-08-31 01:13:02"
+  },
+  {
+    "name": "test1_1M_three_factor_precise",
+    "seed": 0,
+    "config": {
+      "steps": 25,
+      "M": 20,
+      "lr": 0.005,
+      "sigma": 0.01
+    },
+    "result": {
+      "final_loss": 1.0489946603775024,
+      "wall_clock_s": 11.430053949356079,
+      "mse": 0.3425290584564209,
+      "psnr_db": 4.653025792315403,
+      "pixel_accuracy": 0.6062244772911072,
+      "ssim": 0.08533239364624023
+    },
+    "timestamp": "2026-08-31 01:13:17"
+  },
+  {
+    "name": "test1_1M_three_factor_noisy",
+    "seed": 0,
+    "config": {
+      "steps": 250,
+      "M": 2,
+      "lr": 0.005,
+      "sigma": 0.01
+    },
+    "result": {
+      "final_loss": 1.0616973638534546,
+      "wall_clock_s": 14.527904272079468,
+      "mse": 0.34367480874061584,
+      "psnr_db": 4.6385230035011205,
+      "pixel_accuracy": 0.6052678823471069,
+      "ssim": 0.08541876822710037
+    },
+    "timestamp": "2026-08-31 01:13:35"
+  },
+  {
+    "name": "test1_1M_two_factor",
+    "seed": 0,
+    "config": {
+      "steps": 250,
+      "eta": 1e-06
+    },
+    "result": {
+      "final_loss": 1.0892573595046997,
+      "wall_clock_s": 9.447865962982178,
+      "mse": 0.3425068259239197,
+      "psnr_db": 4.653307688969507,
+      "pixel_accuracy": 0.6069515347480774,
+      "ssim": 0.08798538893461227
+    },
+    "timestamp": "2026-08-31 01:13:48"
+  },
+  {
+    "name": "test1_1M_summary",
+    "seed": 0,
+    "config": {},
+    "result": {
+      "backprop": {
+        "mse": 0.057469334453344345,
+        "psnr_db": 12.405638323584494,
+        "pixel_accuracy": 0.8969770669937134,
+        "ssim": 0.5771811604499817
+      },
+      "three_factor_precise": {
+        "mse": 0.3425290584564209,
+        "psnr_db": 4.653025792315403,
+        "pixel_accuracy": 0.6062244772911072,
+        "ssim": 0.08533239364624023
+      },
+      "three_factor_noisy": {
+        "mse": 0.34367480874061584,
+        "psnr_db": 4.6385230035011205,
+        "pixel_accuracy": 0.6052678823471069,
+        "ssim": 0.08541876822710037
+      },
+      "two_factor": {
+        "mse": 0.3425068259239197,
+        "psnr_db": 4.653307688969507,
+        "pixel_accuracy": 0.6069515347480774,
+        "ssim": 0.08798538893461227
+      }
+    },
+    "timestamp": "2026-08-31 01:13:53"
+  }
+]
